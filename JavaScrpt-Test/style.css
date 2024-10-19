@@ -1,0 +1,33 @@
+/* .error {
+  color: red;
+}
+
+.valid {
+  color: green;
+}
+
+#customMenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+#customMenu ul {
+  list-style: none;
+  padding: 0;
+}
+#customMenu li {
+  padding: 8px;
+  cursor: pointer;
+}
+#customMenu li:hover {
+  background-color: #eee;
+} */
+
+#dragItem {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+}

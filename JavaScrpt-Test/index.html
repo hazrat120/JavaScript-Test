@@ -6,6 +6,12 @@
     <title>JavaScript</title>
 
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .highlight {
+        color: white;
+        background-color: aqua;
+      }
+    </style>
   </head>
   <body>
     <!-- <h1 id="heading-h1">Hello World</h1>
@@ -28,22 +34,7 @@
       <li>Item 2 <button class="deleteBtn">Delete</button></li>
     </ul>
     <input type="text" id="newItem" placeholder="New Item" />
-    <button onclick="addItem()">Add Item</button> -->
-
-    <h1 id="id">Hello World</h1>
-    <p id="para"></p>
-
-    <h2 id="title">Hello, DOM!</h2>
-    <p id="remove-me">Remove this paragraph.</p>
-
-    <div id="parent">
-      <p id="removeP">Hazrat Ali</p>
-    </div>
-
-    <button onclick="updateTitle()">Update Title</button>
-    <button onclick="addParagraph()">Add Paragraph</button>
-    <button onclick="removeParagraph()">Remove Paragraph</button>
-
+    <button onclick="addItem()">Add Item</button> 
     <p class="myClass">Hello World-1</p>
     <p class="myClass">Hello World-2</p>
     <p class="myClass">Hello World-3</p>
@@ -55,7 +46,106 @@
     <p class="myClass">Hello World-9</p>
     <p class="myClass">Hello World-10</p>
     <p class="myClass">Hello World-11</p>
-    <p class="myClass">Hello World-12</p>
+    <p class="myClass">Hello World-12</p> 
+    <button onclick="addParagraph()">Add Paragraph</button>
+    <button onclick="removeParagraph()">Remove Paragraph</button> 
+
+    <h1 id="id">Hello World</h1>
+    <p id="para">This is paragraph</p>
+    <button id="btn">ActiveFun</button>
+
+    <div id="parent">
+      <p id="child">Hazrat Ali</p>
+    </div> 
+
+     <form id="basicForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form> 
+
+    <form id="intermediateForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+ <form id="advancedForm">
+      <label for="username">Username (3-15 characters):</label>
+      <input type="text" id="username" name="username" />
+      <span id="usernameFeedback" class="error"></span><br /><br />
+
+      <label for="password">Password (min 8 characters):</label>
+      <input type="password" id="password" name="password" />
+      <span id="passwordFeedback" class="error"></span><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form> 
+
+    <li id="Li">Hazrat Ali</li>
+
+    <div id="parent">
+      <h1 id="heading">Hello</h1>
+      <button id="addItem">Add Text</button>
+    </div>
+    <br />
+    <br />
+
+    <div class="wrapper">
+      <ul id="taskList">
+        <li>Task 1 <button class="removeBtn">Remove</button></li>
+        <li>Task 2 <button class="removeBtn">Remove</button></li>
+        <li>Task 3 <button class="removeBtn">Remove</button></li>
+      </ul>
+      <br />
+      <br />
+      <ul id="taskList-1">
+        <li>Task 1 <button class="removeBtn-1">Remove</button></li>
+        <li>Task 2 <button class="removeBtn-1">Remove</button></li>
+        <li>Task 3 <button class="removeBtn-1">Remove</button></li>
+      </ul>
+    </div>  
+
+    <button id="createBtn">Create Div</button>
+    <div id="container"></div>
+
+
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <div
+      id="target"
+      style="margin-top: 100vh; height: 100px; background-color: coral"
+    ></div>
+
+
+    <div id="customMenu">
+      <ul>
+        <li>Option 1</li>
+        <li>Option 2</li>
+      </ul>
+    </div>
+    <p>Right-click anywhere on this page to see the custom context menu.</p>
+-->
+    <div id="dragItem" draggable="true"></div>
     <script src="main.js"></script>
   </body>
 </html>
